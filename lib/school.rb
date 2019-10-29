@@ -15,8 +15,8 @@ class School
   end
   def sort 
     @roster.each do |key, value|
-      value.each do |students|
-        students = students.sort
+      if value.length > 1 
+        value.sort
       end 
     end 
   end
