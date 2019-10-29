@@ -13,8 +13,9 @@ class School
   def grade(student_grade)
     return @roster[student_grade]
   end
-  @roster.each do |key, value|
-    value = value.sort
-  end 
-  
+  def sort 
+    @roster.each do |key, value|
+      value = value.sort
+    end 
+  end
 end 
