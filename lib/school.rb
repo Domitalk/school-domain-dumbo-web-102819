@@ -16,9 +16,7 @@ class School
   
   def sort 
     @roster.each do |grade, array_students|
-      if array_students.length > 1 
-        array_students = array_students.sort 
-      end 
+      grade.sort 
     end 
   end
   
