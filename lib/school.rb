@@ -14,9 +14,9 @@ class School
     return @roster[student_grade]
   end
   def sort 
-    @roster.each do |key, value|
-      if value.length > 1 
-        value.sort
+    @roster.each do |grade, array_students|
+      if array_students.length > 1 
+        array_students = array_students.sort 
       end 
     end 
   end
